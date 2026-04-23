@@ -14,26 +14,13 @@ public class FuncionariosModel {
     private String cpf;
     private String matricula;
     private String dt_nascimento;
-    private String Setor;
+    private String setor;
     private double salario;
     private String telefone;
     private String email;
     private String endereco;
 
     public FuncionariosModel() {
-    }
-
-    public FuncionariosModel(Long id, String nome, String cpf, String matricula, String dt_nascimento, String setor, double salario, String telefone, String email, String endereco) {
-        this.id = id;
-        this.nome = nome;
-        this.cpf = cpf;
-        this.matricula = matricula;
-        this.dt_nascimento = dt_nascimento;
-        Setor = setor;
-        this.salario = salario;
-        this.telefone = telefone;
-        this.email = email;
-        this.endereco = endereco;
     }
 
     public Long getId() {
@@ -77,11 +64,11 @@ public class FuncionariosModel {
     }
 
     public String getSetor() {
-        return Setor;
+        return setor;
     }
 
     public void setSetor(String setor) {
-        Setor = setor;
+        this.setor = setor;
     }
 
     public double getSalario() {
